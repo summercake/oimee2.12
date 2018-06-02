@@ -17,15 +17,15 @@ class CreatePostsTable extends Migration
             $table -> increments('post_id');
             $table -> integer('user_id')-> unsigned();
             $table -> integer('category_id')-> unsigned();
+            $table -> integer('tag_id')-> unsigned();
             $table -> string('post_title') -> unique();
             $table -> string('post_subtitle') -> nullable();
-            $table -> string('post_content');
-            $table -> string('post_excerpt');
-            $table -> string('post_slug');
+            $table -> text('post_content');
+            $table -> string('post_excerpt')->nullable();
+            $table -> string('post_slug')->nullable();
             $table -> integer('post_reply_count')->default(0);
             $table -> integer('post_view_count')->default(0);
             $table -> integer('post_like_count')->default(0);
-            $table -> tinyInteger('post_tag');
             $table -> integer('post_last_reply_user_id');
             $table -> integer('post_order')->default(1);
             // active_flag is used for identifying status of delete or not

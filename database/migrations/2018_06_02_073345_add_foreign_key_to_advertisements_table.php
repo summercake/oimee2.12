@@ -17,6 +17,7 @@ class AddForeignKeyToAdvertisementsTable extends Migration
             $table -> foreign('category_id') -> references('category_id') -> on('categories');
             $table -> foreign('company_id') -> references('company_id') -> on('companies');
             $table -> foreign('image_id') -> references('image_id') -> on('images');
+            //$table -> foreign('tag_id') -> references('tag_id') -> on('tags');
             //$table -> foreign('sale_note_id') -> references('sale_note_id') -> on('sale_notes') -> onUpdate('cascade') -> onDelete('set null');
         });
     }
@@ -32,6 +33,7 @@ class AddForeignKeyToAdvertisementsTable extends Migration
             $table -> dropForeign('advertisements_category_id_foreign');
             $table -> dropForeign('advertisements_company_id_foreign');
             $table -> dropForeign('advertisements_image_id_foreign');
+            //$table -> dropForeign('advertisements_tag_id_foreign');
             //$table -> dropForeign('advertisements_role_id_foreign');
         });
     }

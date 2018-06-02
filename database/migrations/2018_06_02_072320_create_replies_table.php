@@ -15,10 +15,10 @@ class CreateRepliesTable extends Migration
     {
         Schema::create('replies', function (Blueprint $table) {
             $table -> increments('reply_id');
-            $table -> integer('post_id')-> unsigned();
+            $table -> integer('post_id')-> unsigned()->nullable();
+            $table -> integer('reply_to_id')-> unsigned()->nullable();
             $table -> integer('user_id')-> unsigned();
-            $table -> string('reply_content');
-            $table -> integer('reply_view_count')->default(0);
+            $table -> text('reply_content');
             $table -> integer('reply_like_count')->default(0);
             // active_flag is used for identifying status of delete or not
             $table -> tinyInteger('active_flag')->default(1);

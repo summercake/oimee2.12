@@ -20,7 +20,7 @@ class CreateImagesTable extends Migration
             $table -> string('image_path');
             $table -> string('image_url');
             // image type : 0 is surface image, 1 is content image
-            $table -> string('image_type');
+            $table -> tinyInteger('image_type')->default(1);
             // active_flag is used for identifying status of delete or not
             $table -> tinyInteger('active_flag')->default(1);
             $table -> timestamps();

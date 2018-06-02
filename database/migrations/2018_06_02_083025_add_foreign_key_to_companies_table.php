@@ -14,7 +14,7 @@ class AddForeignKeyToCompaniesTable extends Migration
     public function up()
     {
         Schema::table('companies', function (Blueprint $table) {
-            $table -> foreign('contact_people_id') -> references('contact_people_id') -> on('contact_people');
+            $table -> foreign('contact_person_id') -> references('contact_person_id') -> on('contact_persons');
         });
     }
 
@@ -26,7 +26,7 @@ class AddForeignKeyToCompaniesTable extends Migration
     public function down()
     {
         Schema::table('companies', function (Blueprint $table) {
-            $table -> dropForeign('companies_contact_people_id_foreign');
+            $table -> dropForeign('companies_contact_person_id_foreign');
         });
     }
 }

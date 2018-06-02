@@ -18,7 +18,9 @@ class CreateAdvertisementsTable extends Migration
             $table -> integer('category_id')-> unsigned();
             $table -> integer('company_id')-> unsigned();
             $table -> integer('image_id')-> unsigned();
-            $table -> integer('sale_note_id')-> unsigned();
+            // adv_tag is used for identifying status of normal, hottest, newest and others
+            $table -> tinyInteger('tag_id')->unsigned()->default(1);
+            $table -> integer('sale_note_id')-> unsigned()->nullable();
             $table -> string('adv_title');
             $table -> string('adv_description') -> nullable();
             // adv_link is used for store product official shopping link
@@ -33,11 +35,10 @@ class CreateAdvertisementsTable extends Migration
             $table -> datetime('adv_start_date') -> nullable();
             $table -> datetime('adv_valid_to_date') -> nullable();
             $table -> datetime('adv_display_valid_to_date') -> nullable();
-            // adv_tag is used for identifying status of normal, hottest, newest and others
-            $table -> tinyInteger('adv_tag');
             //
-            $table -> string('adv_share_channel') -> nullable();
             $table -> tinyInteger('adv_page_zone_code') -> nullable();
+            $table -> integer('adv_like_count') ->default(0);
+            $table -> integer('adv_view_count') ->default(0);
             // active_flag is used for identifying status of delete or not
             $table -> tinyInteger('active_flag') ->default(1);
             $table -> timestamps();

@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class ContactPerson extends Model
 {
     //
-    protected $primaryKey = 'contact_people_id';
+    protected $table = 'contact_persons';
+    protected $primaryKey = 'contact_person_id';
 }
