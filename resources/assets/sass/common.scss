@@ -1,0 +1,485 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Variables
+//@import "_variables";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~font-awesome/scss/font-awesome';
+// Colors
+$body-bg: #F5F8FA;
+$main-red: #F97F86;
+$hover-red: #FBB2AE;
+$main-bg: #EBEBEB;
+$main-shadow: #D8D8D8;
+$dark-light: #A4A4A4;
+$font-light: #A2A2A2;
+$dark: #707070;
+$yellow: #CAAE4F;
+$white: #FFFFFF;
+$black: #000000;
+
+// Typography
+$font-family-sans-serif: "Microsoft YaHei", "Raleway", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// base effect
+$b-shadow: 0 .25rem .25rem rgba(0, 0, 0, .1) !important;
+$b-shadow-hover: 3px 3px 5px $main-shadow;
+$border-light: 2px solid $dark-light;
+$border-gray: 1px solid $dark-light;
+$border-red: 1px solid $main-red;
+$border-red-adv: 5px solid $main-red;
+$border-red-hover: 2px solid $dark-light;
+
+.btn-outline{
+  background: $white;
+  width: 120px;
+  color: $main-red;
+  border: 1px solid $main-red;
+  text-align: center;
+}
+.btn-outline:hover{
+  cursor: pointer;
+  background: $main-red;
+  width: 120px;
+  color: $white !important;
+  border: 1px solid $main-red;
+  text-align: center;
+  box-shadow: $b-shadow;
+}
+.btn-main{
+  background: $main-red;
+  width: 120px;
+  color: $white !important;
+  border: none;
+  text-align: center;
+}
+.btn-main:hover{
+  background: $main-red;
+  width: 120px;
+  color: $white;
+  box-shadow: $b-shadow;
+  cursor: pointer;
+}
+.btn-outline-round{
+  background: $white;
+  text-align: center;
+  width: 120px;
+  color: $main-red;
+  border: 1px solid $main-red!important;
+  border-radius: 4rem!important;
+}
+.btn-outline-round:hover{
+  cursor: pointer;
+  text-align: center;
+  background: $main-red;
+  width: 120px !important;
+  color: $white !important;
+  border: 1px solid $main-red;
+  border-radius: 4rem;
+  box-shadow: $b-shadow;
+}
+// Common Style
+html{
+  font-size: 12px;
+  position: relative;
+  min-height: 100%;
+  body{
+    margin-bottom: 60px;
+    color: $font-light;
+    font-family: "Microsoft YaHei", "sans-serif", "Arial";
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="time"]:focus,
+    input[type="week"]:focus,
+    input[type="number"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="color"]:focus,
+    textarea{
+      outline: none;
+      box-shadow: none !important;
+      border: 1px solid #CCCCCC !important;
+    }
+    a{
+      color: $dark;
+      letter-spacing: 1px;
+    }
+    a:hover{
+      text-decoration: none;
+      color: $dark-light;
+      letter-spacing: 1px;
+    }
+    h1, h2, h3, h4, h5, h6{color: $dark;}
+    p{color: $dark-light}
+    .container-fluid{
+      padding: 0;
+    }
+    .container{
+      padding: 0;
+      margin: 30px auto;
+    }
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev{
+      display: block !important;
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+      color: $dark-light;
+      background-color: $body-bg;
+      border-color: $main-red #DEE2E6 #F5F8FA;
+    }
+    .nav-tabs .nav-link{
+      border: 1px solid transparent;
+    }
+    .pagination > li > a, .pagination > li > span,
+    .pagination > li > a.active, .pagination > li > span.active,
+    .pagination > li > a.focus, .pagination > li > span.focus{
+      outline: none;
+      box-shadow: none !important;
+      border: none;
+      border-radius: 0;
+    }
+    .carousel-indicators li{
+      background: $dark-light;
+    }
+    .carousel-indicators{
+      .active{
+        background: $main-red;
+      }
+    }
+  }
+}
+.nav-section{
+  .container{
+    margin: 20px auto;
+  }
+  .nav-search{
+    .input-group{
+      margin: 10px 0;
+      label, button{
+        background: $main-red;
+        color: $body-bg;
+        border: 1px solid $main-red;
+      }
+    }
+  }
+  #nav-tags{
+    background: $main-red;
+    margin: 0;
+    .container{
+      margin: 5px auto;
+    }
+    //p{
+    //  display: inline-block;
+    //  color: $white;
+    //  margin: 0;
+    //}
+    a{
+      color: $body-bg;
+    }
+    a:hover{
+      font-weight: bold;
+      color: $body-bg;
+      border-top: 2px solid $body-bg;
+    }
+  }
+  .nav-first-row{
+    padding: 10px 0;
+    border-bottom: 2px solid $main-red;
+    #search-set{
+      span{
+        background: $main-red;
+        color: $white !important;
+      }
+    }
+    ul{
+      width: 100%;
+      li{
+        padding: 0 5px;
+        display: inline-block;
+        list-style: none;
+      }
+    }
+  }
+  .nav-second-row{
+    .container{
+      margin: 0;
+    }
+    margin: 10px 0;
+    .func-btns{
+      li{
+        display: inline-block;
+        list-style: none;
+      }
+    }
+    .tags-btns{
+      background: #B0B0B0;
+      display: block;
+      li{
+        display: inline-block;
+        list-style: none;
+        padding: 0 5px;
+        a{
+          color: $white;
+        }
+        a:hover{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+/* Home page */
+#tags{
+  a{
+    padding-top: 5px;
+  }
+  a:hover{
+    border-top: 2px solid $main-red;
+  }
+}
+#adv-first{
+  margin-bottom: 10px;
+}
+.adv-top-section{
+  padding: 0 10px;
+  .col-md-3{
+    padding: 0 5px;
+  }
+  .carousel-item{
+    transition: transform 3s ease, opacity 1s ease-out
+  }
+  .card{
+    border: none;
+    background: $white;
+    height: 240px;
+    img{
+      padding: 40px;
+      padding-bottom: 0;
+    }
+    h6{
+      color: $dark;
+    }
+    .original-price{
+      text-decoration: line-through;
+      margin: 0;
+    }
+    .current-price{
+      color: $main-red;
+      margin: 0;
+    }
+  }
+}
+.slide-indicator{
+  line-height: 33px;
+  a{
+    color: $main-red;
+  }
+  ol{
+    margin-bottom: 8px;
+  }
+}
+.slide-indicator{
+  a:hover{
+    color: $main-red;
+  }
+}
+.dis-info{
+  .simple-dis-info{
+    margin: 0 0 25px 0;
+    background: $white;
+    padding: 20px 10px 20px 10px;
+    p{
+      color: $font-light;
+    }
+  }
+  .btn-outline{
+    background: $main-red;
+    width: 120px;
+    color: $white;
+  }
+  .btn-outline:hover{
+    background: $main-red;
+    width: 120px;
+    color: $white;
+    box-shadow: $b-shadow;
+  }
+  .btn-outline-more{
+    border: 1px solid $font-light;
+    width: 100%;
+    color: $font-light;
+    margin: 5px;
+  }
+  .info-bottom-row{
+    a, i, p{
+      color: $font-light;
+    }
+    .info-source{
+      margin-bottom: 0px;
+    }
+  }
+  .complete-dis-info{
+    margin: 0 0 25px 0;
+    background: $white;
+    padding: 20px 10px 20px 10px;
+    p{
+      color: $font-light;
+    }
+    .cards-row-hidden{
+      display: none;
+    }
+    .cards-row{
+      margin: 5px 0;
+    }
+    .card{
+      img{
+        padding: 10px;
+      }
+      p{
+        margin: 0;
+      }
+      .card-body{
+        padding: 10px;
+      }
+      .original-price{
+        display: none;
+      }
+      .current-price{
+        color: $main-red;
+      }
+    }
+    #hide-more{
+      display: none;
+    }
+  }
+}
+#dis-info-right{
+  img{
+    margin-bottom: 25px;
+    padding: 0 10%;
+  }
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $main-red;
+  label{
+    color: $white
+  }
+  li{
+    list-style: none;
+    a{
+      color: $white;
+    }
+    a:hover{
+      color:$white
+    }
+  }
+  li::before{
+    content: "•";
+    color: $white;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+  }
+}
+/* Login Page */
+.login-page{
+  .login-form{
+    margin-top: 10px;
+  }
+  .btn-login{
+    color: $main-red;
+  }
+  .login-btn{
+    margin: 10px auto;
+  }
+  .login-wechat, .login-qq{
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    .btn-outline-round:hover{
+      background: $white;
+      text-align: center;
+      width: 120px;
+      color: $main-red !important;
+      border: 1px solid $main-red;
+      border-radius: 4rem;
+      box-shadow: none !important;
+    }
+  }
+}
+.register-page{
+  .login-form{
+    margin-top: 10px;
+  }
+  .btn-login{
+    color: $main-red;
+  }
+  .login-btn{
+    margin: 10px auto;
+  }
+  .login-wechat, .login-qq{
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    .btn-outline-round:hover{
+      background: $white;
+      text-align: center;
+      width: 120px;
+      color: $main-red !important;
+      border: 1px solid $main-red;
+      border-radius: 4rem;
+      box-shadow: none !important;
+    }
+  }
+}
+/* user info */
+.user-sidebar{
+  background: $white;
+  padding: 10px;
+  ul{
+    label{
+      padding-left: 10px;
+      border-left: 2px solid $main-red;
+    }
+    li{
+      padding-left: 10px;
+      list-style: none;
+    }
+  }
+}
+.userinfo{
+  .address-table{
+    background: $white;
+    padding: 20px;
+    margin-bottom: 20px;
+    .table{
+      margin-top: 20px;
+    }
+  }
+  .card{
+    width: 100% !important;
+    border: none;
+  }
+  .login-form{
+    margin-top: 10px;
+  }
+  .btn-login{
+    color: $main-red;
+  }
+  .login-btn{
+    margin: 10px auto;
+  }
+}
+
+

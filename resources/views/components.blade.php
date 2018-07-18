@@ -6,63 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/components.css">
 </head>
 <body>
-{{-- nav --}}
-<div class="container-fluid nav-section mt-3">
-    <div class="container ">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="#" class="navbar-brand p-0">
-                    <img src="{{url('/img/logo2.png')}}" width="180" alt="">
-                </a>
-            </div>
-            <div class="col-md-6 nav-search">
-                <div class="input-group">
-                    <input type="text" class="form-control search-item" name="search-item" placeholder="Item Name..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <input type="text" class="form-control-sm search-zip" name="search-zip" placeholder="Zip Code" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-search" type="button"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a href="#" class="mx-2 my-1 tag-a">手机</a>
-                    <a href="#" class="mx-2 my-1 tag-a">电脑</a>
-                    <a href="#" class="mx-2 my-1 tag-a">美妆</a>
-                    <a href="#" class="mx-2 my-1 tag-a">鞋帽</a>
-                    <a href="#" class="mx-2 my-1 tag-a">保健品</a>
-                    <a href="#" class="mx-2 my-1 tag-a">手机</a>
-                    <a href="#" class="mx-2 my-1 tag-a">电脑</a>
-                    <a href="#" class="mx-2 my-1 tag-a">美妆</a>
-                    <a href="#" class="mx-2 my-1 tag-a">鞋帽</a>
-                    <a href="#" class="mx-2 my-1 tag-a">保健品</a>
-                </div>
-            </div>
-            <div class="col-md-3 p-0 ">
-                <div class="container d-flex justify-content-center">
-                    <a href="#" class="navbar-brand p-0 a-icon">
-                        <i class="fas fa-sign-in-alt fa-2x"></i><br>登录
-                    </a>&nbsp;
-                    <a href="#" class="navbar-brand p-0 a-icon">
-                        <i class="fas fa-building fa-2x"></i><br>注册
-                    </a>&nbsp;
-                    <a href="#" class="navbar-brand p-0 a-icon">
-                        <i class="far fa-mobile fa-2x"></i><br>APP
-                    </a>&nbsp;
-                    <a href="#" class="navbar-brand p-0 a-icon">
-                        <i class="fas fa-building fa-2x"></i><br>社区
-                    </a>&nbsp;
-                    <a href="#" class="navbar-brand p-0 a-icon">
-                        <i class="fas fa-building fa-2x"></i><br>关于
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 {{-- btn --}}
 <div class="container mt-1">
+    <h3>Button</h3>
     <div class="row my-3">
         <div class="col-md-12">
             <a href="#" class="btn btn-main mx-2">小铺</a>
@@ -102,397 +52,198 @@
         </div>
     </div>
 </div>
-{{-- slide --}}
-<div class="container my-3">
-    <div class="row my-3 categories-section">
-        <div class="col-md-3">
-            <div class="categories-bar">
-                <ul>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                    <li class="">
-                        <a href="#">CPU</a>
-                        <span>|</span>
-                        <a href="">内存</a>
-                        <span>|</span>
-                        <a href="">显卡</a>
-                        <span>|</span>
-                        <a href="">音箱</a>
-                        <span>|</span>
-                        <a href="">鼠键</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6 slide-img">
-            <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="{{asset('/img/nike1.jpg')}}" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{asset('/img/nike2.jpeg')}}" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{asset('/img/adidas1.jpeg')}}" alt="Third slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3 adv-slide">
-            <div class="row">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/yoga1.jpeg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/yoga2.jpeg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/yoga3.jpeg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/long1.jpeg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/long2.jpeg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/long3.jpeg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/yoga1.jpeg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/yoga2.jpeg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid" src="{{asset('/img/yoga3.jpeg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{{-- adv --}}
-<div class="container adv-section my-5">
-    <div class="text-right adv-main">
-        <a href="">
-            <h3 class="mb-3 ">精品速递<i class="fas fa-caret-down"></i></h3>
+<hr>
 
-        </a>
-        <div class="row mb-2">
-            <div class="col-md-4">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{-- adv --}}
+<div class="container">
+    <h3>Advertisement</h3>
+    <div class="row">
+        <div class="col-md-4">
+
         </div>
-        <div class="row mt-2">
-            <div class="col-md-4">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
+        <div class="col-md-8">
+            <div class="container adv-top-section my-3 py-2 px-4">
+                <div class="row my-1">
+                    <div class="col-md-6 px-1">
+                        <a href="" class="btn-main-outline-round-light adv-btn-hot ">热门推荐</a>
+                        <a href="" class="btn-main-outline-round-light adv-btn-like ">最多关注</a>
+                    </div>
+                    <div class="col-md-6 px-1">
+                        <nav aria-label="Page navigation example ">
+                            <ul class="pagination mb-0 float-right">
+                                <li class="page-item">
+                                    <a class="page-link" href="#carouselExampleControls" aria-label="Previous" data-slide="prev">
+                                        <i class="fas fa-arrow-circle-left " style="font-size: 20px;"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#carouselExampleControls" aria-label="Next" data-slide="next">
+                                        <i class="fas fa-arrow-circle-right" style="font-size: 20px;"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container adv-section my-5">
-    <div class="text-right adv-main">
-        <a href="">
-            <h3 class="mb-3 ">精品速递<i class="fas fa-caret-down"></i></h3>
-        </a>
-        <div class="row mb-2">
-            <div class="col-md-2">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
+                <div class="row adv-top-hot">
+                    <div class="row">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div class="col-md-2">
+                                            <div class="card">
+                                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                                <div class="card-body p-1">
+                                                    <p class=" adv-card-price">99元包邮（99元定金） </p>
+                                                    <p class=" adv-card-detail">限内蒙古、青海： BOSE QuietComfort 25 有源消噪头戴式耳机 </p>
+                                                </div>
+                                                <i class="fas fa-cut adv-cut"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card">
+                                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                                <div class="card-body p-1">
+                                                    <p class=" adv-card-price">99元包邮（99元定金） </p>
+                                                    <p class=" adv-card-detail">限内蒙古、青海： BOSE QuietComfort 25 有源消噪头戴式耳机 </p>
+                                                </div>
+                                                <i class="fas fa-cut fa-2x adv-cut"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card">
+                                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                                <div class="card-body p-1">
+                                                    <p class=" adv-card-price">99元包邮（99元定金） </p>
+                                                    <p class=" adv-card-detail">限内蒙古、青海： BOSE QuietComfort 25 有源消噪头戴式耳机 </p>
+                                                </div>
+                                                <i class="fas fa-cut fa-2x adv-cut"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card">
+                                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                                <div class="card-body p-1">
+                                                    <p class=" adv-card-price">99元包邮（99元定金） </p>
+                                                    <p class=" adv-card-detail">限内蒙古、青海： BOSE QuietComfort 25 有源消噪头戴式耳机 </p>
+                                                </div>
+                                                <i class="fas fa-cut fa-2x adv-cut"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div class="col-md-2">
+                                            <div class="card">
+                                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                                <div class="card-body p-1">
+                                                    <p class=" adv-card-price">99元包邮（99元定金） </p>
+                                                    <p class=" adv-card-detail">限内蒙古、青海： BOSE QuietComfort 25 有源消噪头戴式耳机 </p>
+                                                </div>
+                                                <i class="fas fa-cut fa-2x adv-cut"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card">
+                                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                                <div class="card-body p-1">
+                                                    <p class=" adv-card-price">99元包邮（99元定金） </p>
+                                                    <p class=" adv-card-detail">限内蒙古、青海： BOSE QuietComfort 25 有源消噪头戴式耳机 </p>
+                                                </div>
+                                                <i class="fas fa-cut fa-2x adv-cut"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card">
+                                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                                <div class="card-body p-1">
+                                                    <p class=" adv-card-price">99元包邮（99元定金） </p>
+                                                    <p class=" adv-card-detail">限内蒙古、青海： BOSE QuietComfort 25 有源消噪头戴式耳机 </p>
+                                                </div>
+                                                <i class="fas fa-cut fa-2x adv-cut"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card">
+                                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                                <div class="card-body p-1">
+                                                    <p class=" adv-card-price">99元包邮（99元定金） </p>
+                                                    <p class=" adv-card-detail">限内蒙古、青海： BOSE QuietComfort 25 有源消噪头戴式耳机 </p>
+                                                </div>
+                                                <i class="fas fa-cut fa-2x adv-cut"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    {{--<div class="container ">
+                        <div class="d-flex justify-content-end">
+                            <nav aria-label="Page navigation example ">
+                                <ul class="pagination mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#carouselExampleControls" aria-label="Previous" data-slide="prev">
+                                            <i class="fas fa-arrow-circle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#carouselExampleControls" aria-label="Next" data-slide="next">
+                                            <i class="fas fa-arrow-circle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>--}}
                 </div>
-            </div>
-            <div class="col-md-2">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
+                <div class="row adv-top-like">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quis!</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quis!</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quis!</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv1.jpg')}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-80 img-fluid" src="{{asset('/img/adv3.jpg')}}" alt="Third slide">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img class="card-img-top " src="{{asset('/img/adv-1by1.jpg')}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quis!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -502,6 +253,7 @@
 </div>
 {{-- alert --}}
 <div class="container my-5">
+    <h3>Alert</h3>
     <div class="alert alert-danger alert-section" role="alert">
         This is a danger alert—check it out!
         <button type="button" class="close" aria-label="Close">
@@ -515,6 +267,7 @@
         </button>
     </div>
 </div>
+<hr>
 {{-- card-vertical --}}
 <div class="container my-3">
     <div class="row">

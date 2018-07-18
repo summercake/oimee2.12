@@ -1,0 +1,141 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Variables
+@import "_variables";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~font-awesome/scss/font-awesome';
+html{
+  font-size: 12px;
+  position: relative;
+  min-height: 100%;
+  body{
+    margin-bottom: 60px;
+    a{
+      color: #4D555D;
+    }
+    .container-fluid{
+      padding: 0;
+    }
+    .container{
+      padding: 0;
+      margin: 0 auto 30px auto;
+    }
+  }
+  .text-dark-light{
+    color: #999999;
+  }
+  .text-dark-extra-light{
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .section-btn:hover{
+    border-top: 2px solid $pink;
+    padding-top: 5px;
+  }
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  background: $pink;
+  .container{
+    margin: 0 auto;
+  }
+;
+  label{
+    color: $white;
+  }
+  li{
+    list-style: none;
+    a{
+      color: $white;
+    }
+    a:hover{
+      color: $white
+    }
+  }
+  li::before{
+    content: "•";
+    color: $white;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+  }
+}
+#nav-main{
+  border-bottom: 1px solid $gray-200;
+  #nav-search{
+    select{
+      border-top-left-radius: 2rem !important;
+      border-bottom-left-radius: 2rem !important;
+      border: 1px solid $pink;
+    }
+    input{
+      border: 1px solid $pink;
+    }
+    button{
+      border-top-right-radius: 2rem !important;
+      border-bottom-right-radius: 2rem !important;
+    }
+  }
+  #nav-main-btn{
+    #nav-special-item{
+      padding: 0.3rem 0;
+      border-top: 2px solid $pink;
+      border-bottom: 2px solid $pink;
+    }
+    a{
+      padding: 0.3rem 0;
+    }
+    a:hover{
+      padding: 0.3rem 0;
+      border-top: 2px solid $pink;
+    }
+  }
+
+  #nav-func-btn{
+    a{
+      color: rgb(77, 85, 93) !important;
+      padding-top: 7px;
+    }
+    a:hover{
+      color: rgb(77, 85, 93) !important;
+      padding-top: 5px;
+      border-top: 2px solid $pink;
+    }
+  }
+}
+#nav-second{
+  padding: 0.6rem 0;
+  #nav-btn{
+    a{
+      width: 10rem;
+    }
+  }
+  #tag-links{
+    background: $gray-100;
+
+  }
+}
+#complete-dis-info{
+  .cards-row{
+    margin: 5px 0;
+  }
+  #hide-more{
+    display: none;
+  }
+}
+#show-more:hover{
+  color: $white !important;
+}
+#login-title{
+  display: inline;
+  border-right: 2px solid $pink;
+}
+.cards-row-hidden{
+  display: none;
+}
+#reset-pwd{
+
+}
